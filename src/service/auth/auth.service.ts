@@ -1,12 +1,12 @@
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import crypto from "crypto";
-import {Auth} from "../../repository/auth/auth.repository"
+import { AuthRepository } from "../../repository/auth/auth.repository";
 import { User } from "../../entities/user.entity";
-import { SignUpDTO, SignInDTO } from "../../dto/user/user.dto";
 import { envConfig } from "../../configs/env.config";
 import { enqueueEmail } from "../../jobs/email.jobs";
-import { buildResetPasswordEmailJob } from "../../functions/email.functions";
+import { SignInDTO,SignUpDTO } from "../../dto/auth/auth.dto";
+import { buildResetPasswordEmailJob } from "../../function/email.functions";
 import { HTTP_STATUS } from "../../constant/statusCode.interface";
 import { ServiceResult } from "../../types/service_result";
 

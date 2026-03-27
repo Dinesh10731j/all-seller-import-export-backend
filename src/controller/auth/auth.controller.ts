@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import { AuthService } from "../../service/user/auth.service";
-import { AuthRepository } from "../../repository/user/auth.repository";
-import { ForgotPasswordDTO, ResetPasswordDTO, SignInDTO, SignUpDTO } from "../../dto/user/user.dto";
+import { AuthService } from "../../service/auth/auth.service";
+import { AuthRepository } from "../../repository/auth/auth.repository";
+import { ForgotPasswordDTO, ResetPasswordDTO, SignInDTO, SignUpDTO } from "../../dto/auth/auth.dto";
 import { plainToInstance } from "class-transformer";
 import { validate } from "class-validator";
 import { HTTP_STATUS } from "../../constant/statusCode.interface";

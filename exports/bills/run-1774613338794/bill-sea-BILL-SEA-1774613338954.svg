@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="942" viewBox="0 0 1400 942">
+<rect x="0" y="0" width="1400" height="942" fill="#ffffff" />
+<rect x="30" y="30" width="1340" height="882" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" />
+<text x="60" y="60" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#0f172a">Invoice BILL-SEA-1774613338954</text>
+<text x="60" y="102" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#0f172a">Issue: 2026-03-27</text>
+<text x="60" y="130" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#0f172a">Due: 2026-03-27</text>
+<text x="60" y="158" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#0f172a">Seller: All Seller Import Export Pvt. Ltd.</text>
+<text x="60" y="186" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#0f172a">Buyer: Global Trade Buyer Inc.</text>
+<text x="60" y="214" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#0f172a">Transport: Sea</text>
+<text x="60" y="242" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#0f172a">Route: Kathmandu, NP -&gt; Newark, US</text>
+<text x="60" y="278" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Items</text>
+<text x="60" y="310" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#0f172a">1. Consumer Electronics | qty 120 x USD 45.00 = USD 5400.00</text>
+<text x="60" y="336" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#0f172a">2. Industrial Spare Parts | qty 60 x USD 80.00 = USD 4800.00</text>
+<text x="60" y="368" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Charges</text>
+<text x="60" y="400" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#0f172a">FREIGHT International Freight (importer) USD 1250.00</text>
+<text x="60" y="426" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#0f172a">DOC_FEE Documentation Fee (exporter) USD 90.00</text>
+<text x="60" y="452" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#0f172a">CUSTOMS_DUTY Customs Duty (importer) USD 420.00</text>
+<text x="60" y="478" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#0f172a">VAT_GST VAT/GST (importer) USD 260.00</text>
+<text x="60" y="504" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#0f172a">INSURANCE Cargo Insurance (shared) USD 95.00</text>
+<text x="60" y="530" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#0f172a">FUEL_SURCHARGE Fuel Surcharge (shared) USD 110.00</text>
+<text x="60" y="556" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#0f172a">CLEARANCE Customs Clearance Service (importer) USD 170.00</text>
+<text x="60" y="582" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#0f172a">WAREHOUSING Warehousing (importer) USD 80.00</text>
+<text x="60" y="608" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#0f172a">INSPECTION Inspection and Compliance (exporter) USD 75.00</text>
+<text x="60" y="634" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#0f172a">SEA_PORT Port Handling and Wharfage (importer) USD 230.00</text>
+<text x="60" y="670" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#0f172a">Subtotal: USD 10200.00</text>
+<text x="60" y="698" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#0f172a">Tax: USD 210.00</text>
+<text x="60" y="726" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#0f172a">Shipping: USD 150.00</text>
+<text x="60" y="754" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#0f172a">Charges: USD 2780.00</text>
+<text x="60" y="782" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#0f172a">Discount: USD 50.00</text>
+<text x="60" y="810" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Total: USD 13290.00</text>
+<text x="60" y="842" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="#0f172a">Importer/Exporter/Shared: USD 2410.00 / USD 165.00 / USD 205.00</text>
+<text x="60" y="876" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#0f172a">Notes: This bill includes importer and exporter imposed charges for commercial trade settlement.</text>
+</svg>

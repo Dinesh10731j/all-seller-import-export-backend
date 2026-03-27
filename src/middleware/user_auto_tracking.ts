@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { AnalyticsRepository } from "../repository/auth/auth.repository";
+import { AnalyticsRepository } from "../repository/analytics/analytics.repository";
 import { CreateAnalyticsDTO } from "../dto/analytics/analytics.dto";
 import { AppDataSource } from "../configs/psqlDb.config";
 export const autoUserTracking = (req: Request, _res: Response, next: NextFunction) => {

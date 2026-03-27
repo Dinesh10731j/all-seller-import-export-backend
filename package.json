@@ -4,9 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/index.ts",
-    "start": "./dist/index.js"
+    "build": "tsc -p tsconfig.json",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "worker:email": "ts-node-dev --respawn --transpile-only worker/email.worker.ts",
+    "start": "node dist/index.js",
+    "typecheck": "node_modules\\.bin\\tsc.cmd --noEmit",
+    "test:unit": "node -r ts-node/register src/tests/run_invoice_tests.ts",
+    "test": "npm run test:unit && npm run typecheck",
+    "generate:bills": "node -r ts-node/register src/scripts/generate_trade_bills.ts"
   },
   "keywords": [],
   "author": "",
@@ -14,14 +19,21 @@
   "type": "commonjs",
   "dependencies": {
     "bcrypt": "^6.0.0",
+    "bullmq": "^5.71.0",
     "chalk": "^5.6.2",
+    "class-transformer": "^0.5.1",
     "class-validator": "^0.15.1",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
+    "exceljs": "^4.4.0",
     "express": "^5.2.1",
     "express-rate-limit": "^8.3.1",
     "jsonwebtoken": "^9.0.3",
     "morgan": "^1.10.1",
+    "node-mailer": "^0.1.1",
+    "nodemailer": "^8.0.3",
+    "pdfkit": "^0.17.2",
+    "pg": "^8.20.0",
     "typeorm": "^0.3.28"
   },
   "devDependencies": {
@@ -32,6 +44,8 @@
     "@types/jsonwebtoken": "^9.0.10",
     "@types/morgan": "^1.9.10",
     "@types/node": "^25.5.0",
+    "@types/nodemailer": "^7.0.11",
+    "@types/pdfkit": "^0.17.0",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.9.3"
   }

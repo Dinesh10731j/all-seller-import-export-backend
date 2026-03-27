@@ -6,33 +6,16 @@ export interface UserPayload {
   name: string;
 }
 
-
+export type EmailTemplateType = "reset_password" | "invoice";
 
 export interface EmailJobData {
   to: string;
   subject: string;
-  templateData:
-    | BookingEmailTemplateData
-    | ResetPasswordTemplateData
-    | ReplyEmailTemplateData
-    | NewsLetterSubscribeTemplateData
-    | NewsLetterBroadcastTemplateData;
-  templateType:
-    | "confirmed"
-    | "pending"
-    | "cancelled"
-    | "reset_password"
-    | "reply"
-    | "newsletter_subscribe"
-    | "newsletter_broadcast";
-}
-
-export interface BookingEmailTemplateData {
-  name: string;
-  flightNumber: string;
-  departure: string;
-  destination: string;
-  departureTime: string;
+  templateType: EmailTemplateType;
+  templateData: ResetPasswordTemplateData | InvoiceTemplateData;
+  cc?: string | string[];
+  bcc?: string | string[];
+  replyTo?: string;
 }
 
 export interface ResetPasswordTemplateData {
@@ -40,17 +23,56 @@ export interface ResetPasswordTemplateData {
   resetLink: string;
 }
 
-export interface ReplyEmailTemplateData {
+export interface PartyInfo {
   name: string;
-  message: string;
-  relatedTo?: string;
+  address?: string;
+  email?: string;
+  phone?: string;
+  taxId?: string;
 }
 
-export interface NewsLetterSubscribeTemplateData {
-  email: string;
+export interface InvoiceLineItem {
+  description: string;
+  hsCode?: string;
+  quantity: number;
+  unitPrice: number;
+  unit?: string;
 }
 
-export interface NewsLetterBroadcastTemplateData {
-  title?: string;
-  content: string;
+export type TransportMode = "air" | "road" | "sea";
+export type ChargePayer = "importer" | "exporter" | "shared";
+
+export interface InvoiceCharge {
+  code: string;
+  label: string;
+  amount: number;
+  payer: ChargePayer;
+  description?: string;
+}
+
+export interface ShipmentDetails {
+  origin: string;
+  destination: string;
+  incoterm?: string;
+  transportDocumentNumber?: string;
+  referenceNumber?: string;
+}
+
+export interface InvoiceTemplateData {
+  invoiceNumber: string;
+  issueDate: string; // ISO date string
+  dueDate?: string; // ISO date string
+  currency: string; // e.g. "USD", "NPR"
+  seller: PartyInfo;
+  buyer: PartyInfo;
+  items: InvoiceLineItem[];
+  notes?: string;
+  subtotal?: number;
+  tax?: number;
+  discount?: number;
+  shipping?: number;
+  total?: number;
+  transportMode?: TransportMode;
+  shipment?: ShipmentDetails;
+  charges?: InvoiceCharge[];
 }

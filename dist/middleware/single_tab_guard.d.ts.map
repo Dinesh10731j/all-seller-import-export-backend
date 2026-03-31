@@ -1,0 +1,1 @@
+{"version":3,"file":"single_tab_guard.d.ts","sourceRoot":"","sources":["../../src/middleware/single_tab_guard.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,YAAY,EAAE,OAAO,EAAE,QAAQ,EAAE,MAAM,SAAS,CAAC;AAqB1D,qBAAa,cAAc;WACZ,OAAO,CAAC,GAAG,EAAE,OAAO,EAAE,GAAG,EAAE,QAAQ,EAAE,IAAI,EAAE,YAAY;CAyBrE"}

@@ -7,6 +7,8 @@ export const enqueueEmail = async (data: EmailJobData) => {
     backoff: { type: "exponential", delay: 2000 },
     removeOnComplete: true,
     removeOnFail: false,
+    jobId:'sendMail',
+    
   });
 };
 

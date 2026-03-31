@@ -1,0 +1,34 @@
+export declare const Message: {
+    INTERNAL_SERVER_ERROR: string;
+    SUCCESS: string;
+    CREATED: string;
+    FETCHED: string;
+    UPDATED: string;
+    DELETED: string;
+    NOT_FOUND: string;
+    HEALTH_OK: string;
+    USER_ALREADY_EXISTS: string;
+    USER_NOT_FOUND: string;
+    USER_CREATED_SUCCESS: string;
+    USER_UPDATED_SUCCESS: string;
+    USER_DELETED_SUCCESS: string;
+    INVALID_EMAIL_OR_PASSWORD: string;
+    LOGIN_SUCCESS: string;
+    UNAUTHORIZED: string;
+    FORBIDDEN: string;
+    ACCESS_TOKEN_MISSING: string;
+    INVALID_TOKEN_PAYLOAD: string;
+    INVALID_OR_EXPIRED_TOKEN: string;
+    FORBIDDEN_ROLE: string;
+    RESET_EMAIL_SENT: string;
+    RESET_TOKEN_INVALID: string;
+    PASSWORD_RESET_SUCCESS: string;
+    MULTIPLE_TAB_NOT_ALLOWED: string;
+    INVALID_REQUEST: string;
+    MISSING_FIELDS: string;
+    CAPTCHA_REQUIRED: string;
+    CAPTCHA_FAILED: string;
+    NEWSLETTER_SUBSCRIBED: string;
+    NEWSLETTER_SENT: string;
+};
+//# sourceMappingURL=message.interface.d.ts.map

@@ -13,6 +13,7 @@ const authRepo = new AuthRepository();
 const authService = new AuthService(authRepo);
 
 export class AuthController {
+
   static async signup(req: Request, res: Response) {
   try {
     const dto = plainToInstance(SignUpDTO, req.body);

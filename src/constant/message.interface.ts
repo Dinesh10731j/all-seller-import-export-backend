@@ -28,8 +28,7 @@ export const Message = {
   RESET_EMAIL_SENT: "Password reset email sent",
   RESET_TOKEN_INVALID: "Reset token is invalid or expired",
   PASSWORD_RESET_SUCCESS: "Password reset successful",
-  MULTIPLE_TAB_NOT_ALLOWED:
-    "This account is already active in another browser tab. Please close the other tab and try again.",
+  MULTIPLE_TAB_NOT_ALLOWED:"This account is already active in another browser tab. Please close the other tab and try again.",
 
   // Validation
   INVALID_REQUEST: "Invalid request data",
@@ -37,8 +36,6 @@ export const Message = {
   CAPTCHA_REQUIRED: "Captcha token is required",
   CAPTCHA_FAILED: "Captcha verification failed",
 
-  // Booking
-  BOOKING_CANCELLED: "Booking has been cancelled",
   NEWSLETTER_SUBSCRIBED: "Subscribed to newsletter",
   NEWSLETTER_SENT: "Newsletter sent",
 };

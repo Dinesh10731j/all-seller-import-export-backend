@@ -20,6 +20,8 @@ const assertMailerConfigured = () => {
 
 export const emailWorker = new Worker<EmailJobData>(
   "emailQueue",
+
+  
   async (job: Job<EmailJobData>) => {
     assertMailerConfigured();
 

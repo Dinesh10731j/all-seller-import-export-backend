@@ -4,5 +4,6 @@ import { EmailJobData } from "../dto/interface";
 
 export const emailQueue = new Queue<EmailJobData>("emailQueue", {
   connection: redisConnection,
+  
 });
 
